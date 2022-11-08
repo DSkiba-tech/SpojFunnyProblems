@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int p,d,reszta,pom,liczba,ile,pom2;
+cin >> ile;
+for(int i=0;i<ile;i++)
+{
+cin >> p >> d;
+if(p!=d)
+{
+pom=p;
+pom2=d;
+do
+{
+reszta=p%d;
+p=d;
+d=reszta;
+}while(p%d!=0);
+liczba=(pom*pom2)/reszta;
+cout << liczba << endl;
+}
+else cout << p << endl;
+}
+
+
+    return 0;
+}

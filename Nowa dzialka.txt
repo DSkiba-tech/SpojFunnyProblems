@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+int krok,ile;
+cin >> ile;
+for(int i=0;i<ile;i++)
+{
+cin >> krok;
+cout << pow(krok,2) << endl;
+}
+    return 0;
+}

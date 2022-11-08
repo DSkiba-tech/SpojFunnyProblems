@@ -1,0 +1,66 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int d,j,dz,p;
+cin >> d;
+int liczby[d];
+for(int i=0;i<d;i++)
+{
+    cin >> p;
+    liczby[i]=p;
+}
+system("cls");
+for(int i=0;i<d;i++)
+{
+        if(liczby[i]>=10)
+    {
+        j=0;
+        dz=0;
+    cout << dz << " " << j << endl;
+    }
+    if(liczby[i]<=1)
+    {
+        j=1;
+        dz=0;
+        cout << dz << " " << j << endl;
+    }
+    if(liczby[i]==2)
+    {
+        j=2;
+        dz=0;
+        cout << dz << " " << j << endl;
+    }
+    if(liczby[i]==3)
+    {
+        j=6;
+        dz=0;
+        cout << dz << " " << j << endl;
+    }
+    if(liczby[i]==4)
+    {
+        j=4;
+        dz=2;
+        cout << dz << " " << j << endl;
+    }
+    if(liczby[i]==5||liczby[i]==6||liczby[i]==8)
+    {
+        j=0;
+        dz=2;
+        cout << dz << " " << j << endl;
+    }
+    if(liczby[i]==7)
+    {
+        j=0;
+        dz=4;
+        cout << dz << " " << j << endl;
+    }
+    if(liczby[i]==9)
+    {
+        j=0;
+        dz=8;
+        cout << dz << " " << j << endl;
+    }
+}
+return 0;
+}

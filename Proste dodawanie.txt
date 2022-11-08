@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+int ile,liczba=0,ileliczb,zmienna=0;
+cin >> ile;
+int tablica[ile];
+for(int x=0;x<ile;x++)
+{
+    zmienna=0;
+    cin >> ileliczb;
+for(int i=0;i<ileliczb;i++)
+{
+    cin >> liczba;
+    zmienna=zmienna+liczba;
+}
+tablica[x]=zmienna;
+}
+for(int x=0;x<ile;x++)
+{
+    cout << tablica[x] << endl;
+}
+    return 0;
+}

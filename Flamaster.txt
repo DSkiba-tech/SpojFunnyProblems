@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+using namespace std;
+ 
+int main()
+{
+    int pom=0,c;
+string slowo,konw;
+cin>>c;
+for(int z=0;z<c;z++)
+{
+cin >> slowo;
+string real[slowo.length()];
+for(int i=0;i<slowo.length();i++)
+{
+    pom=0;
+    if(slowo[i]==slowo[i+1]&&slowo[i]==slowo[i+2])
+    {
+        for(int x=i;slowo[i]==slowo[x];x++)
+        {
+            pom++;
+            i=x;
+        }
+        konw = to_string(pom);
+        real[i]=slowo[i]+konw;
+    }
+    else
+    {
+        real[i]=slowo[i];
+    }
+}
+for(int i=0;i<slowo.length();i++)
+{
+    cout << real[i];
+}
+cout << endl;
+}
+    return 0;

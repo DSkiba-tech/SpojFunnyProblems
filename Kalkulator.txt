@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b;
+    char z;
+    while(cin >> z >> a >> b)
+    {
+    switch(z)
+    {
+    case '+':
+        cout << a+b << endl;
+        break;
+    case '-':
+        cout << a-b << endl;
+        break;
+    case '*':
+        cout << a*b << endl;
+        break;
+    case '/':
+        cout << a/b << endl;
+        break;
+    case '%':
+        cout << a%b << endl;
+        break;
+    }
+    }
+    return 0;
+}
